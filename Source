@@ -166,6 +166,7 @@ if drawingtype == "new" then
 	setreadonly(Drawing, true)
 end
 
+getrawmetatable = getrawmetatable or function() warn("YOUR EXPLOIT DOES NOT SUPPORT GETRAWMETATABLE, PLEASE CONTACT THE DEVELOPER OR SWITCH EXECUTORS TO USE CMD-X TO THE FULLEST") end
 local mt = getrawmetatable(game)
 local oldindex = mt.__index
 setreadonly(mt, false)
